@@ -1,0 +1,4 @@
+.venv
+.idea
+/Click_tracker/.env
+db.sqlite3
