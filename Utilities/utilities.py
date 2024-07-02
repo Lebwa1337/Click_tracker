@@ -15,6 +15,7 @@ def get_user_data(request: HttpRequest) -> dict:
 
 
 def get_browser(http_sec: str) -> str:
+    """Get proper name for a browser"""
     browser = http_sec.split(";")[0]
     if browser == '"Not/A)Brand"':
         browser = http_sec.split(";")[2].split(",")[1]
